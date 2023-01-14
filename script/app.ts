@@ -1,4 +1,4 @@
-const counterShow = document.querySelector('#counterShow')
+const counterShow: any = document.querySelector('#counterShow')
 const decrease = document.querySelector('#decrease')
 const reset = document.querySelector('#reset')
 const increase = document.querySelector('#increase')
@@ -22,13 +22,13 @@ const typeCounter = (type: string) => {
 }
 
 increase?.addEventListener('click', () => {
-    typeCounter("increase");
+    counterShow.textContent = typeCounter("increase");
 });
 
 decrease?.addEventListener('click', () => {
-    typeCounter("decrease");
+    counterShow.textContent = typeCounter("decrease");
 });
 
 reset?.addEventListener('click', () => {
-    typeCounter("reset");
+    counterShow.textContent = typeCounter("reset");
 });

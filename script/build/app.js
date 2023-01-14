@@ -19,11 +19,11 @@ const typeCounter = (type) => {
     }
 };
 increase === null || increase === void 0 ? void 0 : increase.addEventListener('click', () => {
-    typeCounter("increase");
+    counterShow.textContent = typeCounter("increase");
 });
 decrease === null || decrease === void 0 ? void 0 : decrease.addEventListener('click', () => {
-    typeCounter("decrease");
+    counterShow.textContent = typeCounter("decrease");
 });
 reset === null || reset === void 0 ? void 0 : reset.addEventListener('click', () => {
-    typeCounter("reset");
+    counterShow.textContent = typeCounter("reset");
 });
