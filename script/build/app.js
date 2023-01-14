@@ -14,6 +14,16 @@ const typeCounter = (type) => {
         return counterClick;
     }
     if (type === "reset") {
-        return 0;
+        counterClick = 0;
+        return counterClick;
     }
 };
+increase === null || increase === void 0 ? void 0 : increase.addEventListener('click', () => {
+    typeCounter("increase");
+});
+decrease === null || decrease === void 0 ? void 0 : decrease.addEventListener('click', () => {
+    typeCounter("decrease");
+});
+reset === null || reset === void 0 ? void 0 : reset.addEventListener('click', () => {
+    typeCounter("reset");
+});

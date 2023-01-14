@@ -16,6 +16,19 @@ const typeCounter = (type: string) => {
     }
 
     if (type === "reset") {
-        return 0;
+        counterClick = 0;
+        return counterClick;
     }
 }
+
+increase?.addEventListener('click', () => {
+    typeCounter("increase");
+});
+
+decrease?.addEventListener('click', () => {
+    typeCounter("decrease");
+});
+
+reset?.addEventListener('click', () => {
+    typeCounter("reset");
+});
